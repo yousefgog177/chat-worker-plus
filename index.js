@@ -43,7 +43,7 @@ class Main {
 
   async _request_Files() {
 
-    const filesObj = await AXIOS__.get("https://chat.members-hub.store/api/files/worker", {
+    const filesObj = await AXIOS__.get("https://chat.members-hub.store/api/files/worker?plus=true", {
       headers: {
         authentication: "SBrXagRBkN3$",
       },
@@ -168,3 +168,4 @@ result: ${!!result}
 }
 
 new Main();
+
